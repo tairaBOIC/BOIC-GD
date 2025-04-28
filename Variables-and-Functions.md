@@ -138,3 +138,23 @@ int Heal(){
 ```
 
 <br><br><br><br>
+
+# ALL DONE GUYS
+When we put everyhting together we get...
+
+```csharp
+public class Player : MonoBehaviour
+{
+    bool isAlive = true;
+    int health = 10;
+    float speed = 2.5f;
+    string playerName = "BestPlayer";
+    public int maxHealth;
+
+    
+    void Heal(int amount){
+        health += amount;
+    }
+}
+```
+<br><br><br><br><br><br>
