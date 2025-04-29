@@ -47,13 +47,28 @@ public class HealthManager{
 ```
 
 It is slightly more complex so lets break it down
+
 ```csharp
 for(x; y; z)
 ```
-<br>
-x: The variable we use for counting, usually set to
-<br>
-y = check this every loop to see if loop should continue.
+
+```chsarp
+//  X = the variable we use for counting | usually set to i
+//  Y = the condition that we loop again
+//  Z = what to do with variable every loop
+```
+
+### Cheats
+
+`health++;` is the exact same as `health += 1;`
+`health--;` is the exact same as `health -= 1;`
+
+`Console.WriteLine("Hello");` will print *Hello* to console 
+You can put any variable you want to see information about.
+`Console.WriteLine(health);` 
+This shows us the health variable.
+
+<br><br><br><br><br><br>
 
 
 
