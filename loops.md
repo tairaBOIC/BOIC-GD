@@ -6,12 +6,24 @@ Loops simply repeat themselves for a certain amount of time or conditions.
 
 The easiest Loop is a `while` loop.
 ```csharp
-while(health > 0){
-  health -= 1;
+public class HealthManager{
+    
+    int health = 10;
+    
+    public void DamageLoop(){
+        
+        while (health > 0){
+            health -= 1;
+        }
+        Console.WriteLine(health);
+    }
 }
+
+
 
 ```
 This will take 1 health away until it reaches 0
+then continue
 
 <br><br><br><br><br>
 
