@@ -30,12 +30,30 @@ then continue
 The next loop is a `for` loop
 
 ```csharp
-for (int i = 0; i > 0; i++){
-  health -= 1;
+public class HealthManager{
+    
+    int health = 10;
+    
+    public void DamageLoop(){
+        
+        for (int i = 10; i > 0; i--){
+            health -= 1;
+        }
+        
+        Console.WriteLine(health);
+    }
+    
 }
 ```
 
 It is slightly more complex so lets break it down
-
 ```csharp
-for (int )
+for(x; y; z)
+```
+<br>
+x: The variable we use for counting, usually set to
+<br>
+y = check this every loop to see if loop should continue.
+
+
+
