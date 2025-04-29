@@ -5,7 +5,7 @@ These are some simple game dev concepts.
 
 ## Variables Practive
 ```csharp
-public class Player : MonoBehaviour
+public class Player
 {
     bool isAlive = true;
     int health = 10;
@@ -54,7 +54,7 @@ bool isAlive = true;
 
 `bool` is only True or False
 ```csharp
-bool isAlive = 10;
+bool isAlive = True;
 ```
 <br>
 
@@ -70,19 +70,20 @@ float speed = 2.5f;
 ```
 <br>
 
-`string` is for storing words
+`string` is for storing words or letters
 ```csharp
-string playerName = "LemonMan";
+string playerName = "LemonMan2543";
 ```
 <br>
 
-Putting `public` in front of any variable, will make it visible in Unity
+Putting `public` in front of any variable, will make it visible to other classes
 ```csharp
-public int maxHealth;
+public int maxHealth = 10;
 ```
-In this case, we don't need to give it a starting value.
 
-<br><br><br><br>
+<br><br><br><br><br><br>
+
+
 
 ## Functions
 Functions are reusable blocks of code that perform specific tasks.
@@ -94,11 +95,14 @@ void Heal() {
 In this example, the players health will increase by 2.
 <br><br>
 
-When we want to heal the character, all we have to do is...
+When we want to heal the character, all we have to do is call Heal.
 ``` csharp
 Heal();
 ```
 From anywhere in the script
+<br><br>
+
+
 
 <br><br><br><br>
 
@@ -113,8 +117,11 @@ When we call Heal Player, we need to now give an amount.
 ``` csharp
     Heal(5);
 ```
-
+<br><br>
 *it's good to note that functions should be named with an uppercase letter `Heal` instead of `heal`*
+<br>
+*for variables, we start with lowercase `int health`*
+*if a variable has 2 words like Max Health we write like this `maxHealth`* No space
 
 
 <br><br><br><br><br><br>
