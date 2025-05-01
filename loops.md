@@ -57,6 +57,24 @@ for(x; y; z)
 //  Y = the condition that we loop again
 //  Z = what to do with variable every loop
 ```
+<br><br><br><br>
+
+The final loop you'll need for now is `foreach`
+
+```csharp
+
+int[] damageList;
+health = 10;
+
+foreach(int damage in damageList){
+    health -= damage;
+}
+
+
+```
+
+
+
 
 ### Cheats
 
